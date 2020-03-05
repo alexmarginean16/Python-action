@@ -9,6 +9,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Greet the coder
+      uses: ./action
+      with:
+        MY_NAME: "Alex"
     - name: Set up Python 3.8
       uses: actions/setup-python@v1
       with:
